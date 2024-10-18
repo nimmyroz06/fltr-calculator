@@ -7,6 +7,59 @@ class Addition extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("ADDITION"),
+          backgroundColor: Colors.brown,
+        ),
+        body: Container(
+          child: Padding(
+              padding: const EdgeInsets.all(50.0),
+          child: Column(
+            children: [
+              Text("Enter a number: "),
+              SizedBox(
+                height: 10,
+              ),
+              TextField(
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+            TextField(
+              decoration: InputDecoration(
+                border: OutlineInputBorder(),
+              ),
+              ),
+              SizedBox(
+                height: 10,
+                width: 30,
+              ),
+              ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.orangeAccent),
+                  onPressed: () {},
+                  child: Text("ADD")),
+              SizedBox(
+                height: 10,
+                width: 30,
+              ),
+              ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.orangeAccent),
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                  child: Text("Home"))
+            ],
+          ),
+          ),
+        ),
+      ),
+    );
   }
 }
