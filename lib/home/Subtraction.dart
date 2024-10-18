@@ -42,7 +42,7 @@ class Subtraction extends StatelessWidget {
                     style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.orangeAccent),
                     onPressed: () {},
-                    child: Text("Subtract")
+                    child: Text("SUBTRACT")
                 ),
                 SizedBox(
                   height: 10,
