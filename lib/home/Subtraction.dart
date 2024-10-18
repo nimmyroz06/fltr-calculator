@@ -8,7 +8,7 @@ class Subtraction extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Subtraction"),
+          title: Text("SUBTRACTION"),
           backgroundColor: Colors.brown,
         ),
         body: Container(
