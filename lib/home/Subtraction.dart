@@ -8,7 +8,7 @@ class Subtraction extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Subtraction"),
+          title: Text("SUBTRACTION"),
           backgroundColor: Colors.brown,
         ),
         body: Container(
@@ -42,7 +42,7 @@ class Subtraction extends StatelessWidget {
                     style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.orangeAccent),
                     onPressed: () {},
-                    child: Text("Subtract")
+                    child: Text("SUBTRACT")
                 ),
                 SizedBox(
                   height: 10,
