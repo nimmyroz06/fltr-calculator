@@ -42,7 +42,7 @@ class Multiplication extends StatelessWidget {
                     style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.orangeAccent),
                     onPressed: () {},
-                    child: Text("Multiply")
+                    child: Text("MULTIPLY")
                 ),
                 SizedBox(
                   height: 10,
