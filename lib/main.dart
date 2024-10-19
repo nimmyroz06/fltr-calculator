@@ -1,3 +1,4 @@
+import 'package:calculator/home/Index.dart';
 import 'package:flutter/material.dart';
 void main(){
   runApp(Calculator());
@@ -14,7 +15,7 @@ class Calculator extends StatelessWidget {
           ),
           backgroundColor: Colors.greenAccent,
         ),
-        //body: Home(),
+        body: Index(),
       ),
     );
   }
