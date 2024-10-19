@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-
-
 class Addition extends StatelessWidget {
   const Addition({super.key});
 
@@ -15,48 +13,49 @@ class Addition extends StatelessWidget {
         ),
         body: Container(
           child: Padding(
-              padding: const EdgeInsets.all(50.0),
-          child: Column(
-            children: [
-              Text("Enter a number: "),
-              SizedBox(
-                height: 10,
-              ),
-              TextField(
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(),
+            padding: const EdgeInsets.all(50.0),
+            child: Column(
+              children: [
+                Text("Enter a number: "),
+                SizedBox(
+                  height: 10,
                 ),
-              ),
-              SizedBox(
-                height: 10,
-              ),
-            TextField(
-              decoration: InputDecoration(
-                border: OutlineInputBorder(),
-              ),
-              ),
-              SizedBox(
-                height: 10,
-                width: 30,
-              ),
-              ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.orangeAccent),
-                  onPressed: () {},
-                  child: Text("ADD")),
-              SizedBox(
-                height: 10,
-                width: 30,
-              ),
-              ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.orangeAccent),
-                  onPressed: () {
-                    Navigator.pop(context);
-                  },
-                  child: Text("Home"))
-            ],
-          ),
+                TextField(
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                      hintText: "Enter Number"),
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                Text("Enter a Number:"),
+                TextField(
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                      hintText: "Enter Number"),
+                ),
+                SizedBox(
+                  height: 10,
+                  width: 30,
+                ),
+                ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.orangeAccent),
+                    onPressed: () {},
+                    child: Text("ADD")),
+                SizedBox(
+                  height: 10,
+                  width: 30,
+                ),
+                ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.orangeAccent),
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                    child: Text("Home"))
+              ],
+            ),
           ),
         ),
       ),
