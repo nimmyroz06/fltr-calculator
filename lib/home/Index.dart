@@ -1,3 +1,7 @@
+import 'package:calculator/home/Addition.dart';
+import 'package:calculator/home/Division.dart';
+import 'package:calculator/home/Multiplication.dart';
+import 'package:calculator/home/Subtraction.dart';
 import 'package:flutter/material.dart';
 
 
@@ -19,16 +23,21 @@ class Index extends StatelessWidget {
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.orangeAccent,
                   ),
-                  onPressed: (){
-
-                  }, child: Text("ADD",
-                style: TextStyle(
-                  color: Colors.black87,
-                  fontSize: 15,
-                ),)),
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Addition()));
+                  },
+                  child: Text(
+                    "Addition",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 15,
+                    ),
+                  )),
             ),
-
-            SizedBox(height: 20,),
+            SizedBox(
+              height: 20,
+            ),
             SizedBox(
               width: 300,
               height: 50,
@@ -36,33 +45,41 @@ class Index extends StatelessWidget {
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.orangeAccent,
                   ),
-                  onPressed: (){
-
-                  }, child: Text("SUBTRACT",
-                style: TextStyle(
-                  color: Colors.black87,
-                  fontSize: 15,
-                ),)),
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Subtraction() ));
+                  },
+                  child: Text(
+                    "Subtraction",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 15,
+                    ),
+                  )),
             ),
-
-            SizedBox(height: 20,),
+            SizedBox(
+              height: 20,
+            ),
             SizedBox(
               width: 300,
               height: 50,
               child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.orangeAccent
-                  ),
-                  onPressed: (){
-
-                  }, child: Text("MULTIPLY",
-                style: TextStyle(
-                  color: Colors.black87,
-                  fontSize: 15,
-                ),)),
+                      backgroundColor: Colors.orangeAccent),
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) =>Multiplication()));
+                  },
+                  child: Text(
+                    "Multiplication",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 15,
+                    ),
+                  )),
             ),
-
-            SizedBox(height: 20,),
+            SizedBox(
+              height: 20,
+            ),
             SizedBox(
               width: 300,
               height: 50,
@@ -70,13 +87,16 @@ class Index extends StatelessWidget {
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.orangeAccent,
                   ),
-                  onPressed: (){
-
-                  }, child: Text("DIVIDE",
-                style: TextStyle(
-                  color: Colors.black87,
-                  fontSize: 15,
-                ),)),
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) =>Division()));
+                  },
+                  child: Text(
+                    "Division",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 15,
+                    ),
+                  )),
             ),
           ],
         ),
