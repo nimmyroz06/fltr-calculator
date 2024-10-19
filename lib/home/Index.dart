@@ -28,7 +28,7 @@ class Index extends StatelessWidget {
                         MaterialPageRoute(builder: (context) => Addition()));
                   },
                   child: Text(
-                    "Addition",
+                    "ADDITION",
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 15,
@@ -50,7 +50,7 @@ class Index extends StatelessWidget {
                         MaterialPageRoute(builder: (context) => Subtraction() ));
                   },
                   child: Text(
-                    "Subtraction",
+                    "SUBTRACTION",
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 15,
@@ -70,7 +70,7 @@ class Index extends StatelessWidget {
                     Navigator.push(context, MaterialPageRoute(builder: (context) =>Multiplication()));
                   },
                   child: Text(
-                    "Multiplication",
+                    "MULTIPLICATION",
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 15,
@@ -91,7 +91,7 @@ class Index extends StatelessWidget {
                     Navigator.push(context, MaterialPageRoute(builder: (context) =>Division()));
                   },
                   child: Text(
-                    "Division",
+                    "DIVISION",
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 15,

@@ -10,7 +10,7 @@ class Division extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text("DIVISION"),
-          backgroundColor: Colors.purple,
+          backgroundColor: Colors.brown,
         ),
         body: Container(
           child: Padding(
@@ -41,7 +41,7 @@ class Division extends StatelessWidget {
                 ),
                 ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.purpleAccent),
+                        backgroundColor: Colors.orangeAccent),
                     onPressed: () {},
                     child: Text("DIVIDE")),
                 SizedBox(
@@ -50,7 +50,7 @@ class Division extends StatelessWidget {
                 ),
                 ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.purpleAccent),
+                        backgroundColor: Colors.orangeAccent),
                     onPressed: () {
                       Navigator.pop(context);
                     },
